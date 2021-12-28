@@ -91,6 +91,11 @@ class Usuario {
 
     }
 
+    public static function getList(){
+        $sql = new sql();
+       return $sql->select("SELECT * FROM tb_usuarios ORDER BY nome;");
+    }
+
     public function __toString(){
 
         return json_encode(array(
