@@ -13,6 +13,16 @@ require_once("config.php");
 //echo $root;
 
 //CARREGANDO UMA LISTA DE USUARIO.....
-$lista = usuario::getList();
-echo json_encode($lista)
+/* $lista = usuario::getList();
+echo json_encode($lista) */
+
+/* iserindo usuario
+$pessoa = new Usuario("euquias", "euquiasa@gmail.com", "61991631462");
+$pessoa->insert();
+echo $pessoa; */
+
+$usuario = new Usuario();
+$usuario->loadById(1);
+$usuario->update("Luciana", "luciana@gmail.com", "61991631462");
+echo $usuario;
 ?>
