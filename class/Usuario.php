@@ -171,7 +171,6 @@ class Usuario {
             "email"=>$this->getEmail(),
             "telefone"=>$this->getTelefone(),
             "dtcadastro"=>$this->getDtcadastro()->format("d/m/Y H:i:s")
-
         ));
 
     }

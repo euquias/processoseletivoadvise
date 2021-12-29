@@ -8,13 +8,13 @@ require_once("config.php");
 //echo json_encode($usuarios);
 
 //CARREGANDO UM USUARIO
-//$root = new Usuario();
-//$root->loadbyId(2);
-//echo $root;
+$root = new Usuario();
+$root->loadbyId(2);
+echo $root;
 
 /* CARREGANDO UMA LISTA DE USUARIO..... */
- $lista = usuario::getList();
-echo json_encode($lista) 
+/*  $lista = usuario::getList();
+echo json_encode($lista) */ 
 
 /*  iserindo usuario */
 /* $pessoa = new Usuario("euquias", "euquiasa@gmail.com", "61991631462");
